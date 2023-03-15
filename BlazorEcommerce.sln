@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorEcommerce.Client", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorEcommerce.Shared", "Shared\BlazorEcommerce.Shared.csproj", "{33ECFC0C-B4B3-4D6B-90A7-99C5F054E867}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1585C0C-B438-4CBE-BD01-71F2C473BB97}"
+	ProjectSection(SolutionItems) = preProject
+		Step_by_Step.txt = Step_by_Step.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

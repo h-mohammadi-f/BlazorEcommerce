@@ -1,0 +1,27 @@
+********************************* Section 2: Full Stack Foundations ****************************************
+1- Create a Blazor Webassembly project and tick Asp.Net hosted when we are creating our project. 
+2- Create the product model in the shared folder.
+3- We added the model name space to _import.razor using file in client project.
+4- We added global using in Program.cs file in server project. 
+5- In the shared folder we added product list component.
+6- We added product list css as well.
+7- in the server project we added an empty api controller with the name of ProductController.
+8- We moved creeating our test data from component to controller.
+9- In component we override OnInitialysedAsync and call the api to get product list. 
+10- We want to add swagger. 
+11- From Nuget Package Gallery we add Swashbuckle.AspNetCore to server project. 
+12- In program.cs (server) added required commands. (tagged by coment)
+13- In appseting.jsn server we added connectionstring. 
+14- For start to work with entityframework :
+15- First we need to update dotnet ef version which is installed. 
+17- So, we run this command to unistall it:  dotnet tool uninstall --global dotnet-ef
+18- then we use dotnet tool install --global dotnet-ef to install the latest version. 
+19- We started to add packages to server project: 
+20- Microsoft.EntityFrameworkCore ** Microsoft.EntityFrameworkCore.Design ** Microsoft.EntityFrameworkCore.SqlServer
+21- Add datacontext into server project.
+22- Then we add our DataContext into our services in program.cs file. 
+23- Add our first migration. In package manager: cd server then dotnet ef migrations add initialDatabase
+24- Because we had error for price field, we remove migration we add column typename into model then create it again. 
+25- ""dotnet ef database update" will create database.
+26- Seed data into datacontext. Override onmodelcreating. add migration then update database. 
+    
