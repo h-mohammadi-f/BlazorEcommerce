@@ -24,4 +24,36 @@
 24- Because we had error for price field, we remove migration we add column typename into model then create it again. 
 25- ""dotnet ef database update" will create database.
 26- Seed data into datacontext. Override onmodelcreating. add migration then update database. 
-    
+27- Inject datacontext into product controller.   
+********************************* Section 3: Adding & Using Best Practices ****************************************
+1- Add ServiceResponse class to shared project. 
+2- Then change the return type of controller method. 
+3- Use new return type into client. 
+4- Adding services to our server project. 
+5- Add folder service into server project. 
+6- Add IproductService and ProductServie interface and class. 
+7- Then add them into program.cs for DI. 
+8- In productController, instead of injecting datacontex now we can inject productservice. 
+9- Now we add Services into client. Add services folder/productservice and interface and class. 
+10- For registering our new Interface and Class in program.cs on client side we added: 
+********************************* Section 4: Blazor in Action ****************************************
+1- We want to add a page to show us product details. For that in the pages folder we will add ProductDetails razor
+component.
+2- For defining page directive we used @page at the top of the page with input parameter.
+3- For adding a global css we should add it into app.css in wwwroot folder.
+4- For calling ProductDetails we change the links hrefs in productlist to /product/@product.id
+5- For getting a single product, we added a new method to our product servie and controller server side. 
+6- Then we used them from client side. 
+7- For adding category we added category class into our shared project.
+8- Make relation from Product to Category.
+9- Make migrations and update database. 
+10- Adding category services to the server and client.
+11- Adding Category controller server side.
+12- Adding category services client side. 
+13- Adding category to navbar. Inject Category service into NavMenu.razor. 
+14- Adding GetProductsByCategoryAsync method to Product services and controller.
+15- For making the productservice aware of product changes, we should subscribe it to ProductChanged event. 
+16- We did it by changing code on initialized method productlist.
+17- We added route direction to Index.razor page. 
+
+

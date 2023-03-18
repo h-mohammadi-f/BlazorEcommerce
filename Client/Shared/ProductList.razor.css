@@ -15,19 +15,6 @@
     text-align: center;
 }
 
-.price{
-    color:green;
-}
-
-.media{
-    display:flex;
-    align-items:flex-start;
-}
-
-.media-body{
-    flex:1;
-}
-
 .page-selection {
     margin-right: 15px;
     margin-bottom: 30px;
